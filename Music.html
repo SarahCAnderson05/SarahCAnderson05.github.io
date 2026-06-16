@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>music — Sarah Anderson</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #faf7f2;
+      color: #1f1f1f;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    .page-hero {
+      min-height: 52vh;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.65)),
+        url("music-hero.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 42px 52px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .nav {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 9px;
+      border-bottom: none;
+    }
+    .nav a:hover {
+      opacity: 0.75;
+    }
+    .slash {
+      opacity: 0.7;
+    }
+    .hero-text {
+      max-width: 760px;
+    }
+    .hero-text h1 {
+      font-size: 62px;
+      margin: 0 0 10px;
+      letter-spacing: -1px;
+    }
+    .hero-text p {
+      font-size: 24px;
+      margin: 0;
+      max-width: 720px;
+    }
+    .page {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 64px 24px 70px;
+    }
+    h2 {
+      font-size: 30px;
+      margin-top: 0;
+      border-bottom: 1px solid #d8d0c7;
+      padding-bottom: 8px;
+    }
+    h3 {
+      font-size: 24px;
+      margin: 0 0 6px;
+    }
+    p {
+      font-size: 17px;
+    }
+    a {
+      color: #7a4e3a;
+      text-decoration: none;
+      border-bottom: 1px solid #c9a894;
+    }
+    a:hover {
+      color: #000;
+      border-bottom: 1px solid #000;
+    }
+    .intro-box {
+      background: #fffaf7;
+      border: 1px solid #dfd0c6;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
+      margin-bottom: 58px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 24px;
+      margin-top: 26px;
+      margin-bottom: 58px;
+    }
+    .video-card {
+      background: #fffaf7;
+      border: 1px solid #dfd0c6;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
+    }
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #d8d0c7;
+      border: none;
+      display: block;
+    }
+    .video-content {
+      padding: 22px;
+    }
+    .small {
+      color: #6d665f;
+      font-size: 15px;
+      margin-top: 0;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 13px;
+      background: #eee4dc;
+      padding: 3px 8px;
+      border-radius: 999px;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+    .listening-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 26px;
+    }
+    .listening-card {
+      background: #fffaf7;
+      border: 1px solid #dfd0c6;
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
+    }
+    .embed {
+      width: 100%;
+      border: none;
+      border-radius: 14px;
+      margin-top: 12px;
+    }
+    .note {
+      color: #6d665f;
+      font-size: 15px;
+      margin-top: 18px;
+    }
+    footer {
+      margin-top: 70px;
+      padding-top: 24px;
+      border-top: 1px solid #d8d0c7;
+      color: #6d665f;
+      font-size: 14px;
+    }
+    @media (max-width: 650px) {
+      .page-hero {
+        min-height: 48vh;
+        padding: 34px 24px;
+      }
+      .nav {
+        font-size: 21px;
+        line-height: 1.8;
+      }
+      .nav a {
+        margin: 0 5px;
+      }
+      .hero-text h1 {
+        font-size: 46px;
+      }
+      .hero-text p {
+        font-size: 20px;
+      }
+      .page {
+        padding: 46px 20px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-hero">
+    <nav class="nav">
+      <a href="index.html">home</a>
+      <span class="slash">|</span>
+      <a href="me.html">me</a>
+      <span class="slash">|</span>
+      <a href="work.html">work</a>
+      <span class="slash">|</span>
+      <a href="notes.html">thoughts</a>
+      <span class="slash">|</span>
+      <a href="photos.html">photos</a>
+      <span class="slash">|</span>
+      <a href="contact.html">talk to me!</a>
+    </nav>
+<section class="hero-text">
+  <h1>music</h1>
+  <p>violin, piano, orchestra, and some of my favorite pieces and performances.</p>
+</section>
+  </header>
+  <main class="page">
+    <section class="intro-box">
+      <p>
+        music has been a huge part of my life for as long as i can remember. i’ve played violin and piano
+        for over a decade, performed with youth orchestras and honor ensembles, and have gotten to play in
+        some really special places.
+      </p>
+    </section>
+<section>
+  <h2>performances</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe class="video-frame" src="CARNEGIE_HALL_2022_EMBED_LINK_HERE" allowfullscreen></iframe>
+      <div class="video-content">
+        <h3>Carnegie Hall</h3>
+        <p class="small">2022</p>
+        <p>one of the most memorable places i’ve gotten to perform.</p>
+        <span class="tag">violin</span>
+        <span class="tag">performance</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="HEARTLAND_MUSIC_FESTIVAL_2022_EMBED_LINK_HERE" allowfullscreen></iframe>
+      <div class="video-content">
+        <h3>Heartland Music Festival</h3>
+        <p class="small">2022</p>
+        <p>a festival performance from one of the groups i played with.</p>
+        <span class="tag">orchestra</span>
+        <span class="tag">festival</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="ALL_STATE_2024_EMBED_LINK_HERE" allowfullscreen></iframe>
+      <div class="video-content">
+        <h3>All-State</h3>
+        <p class="small">2024</p>
+        <p>a performance from all-state orchestra.</p>
+        <span class="tag">all-state</span>
+        <span class="tag">violin</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="OLATHE_YOUTH_SYMPHONY_2023_EMBED_LINK_HERE" allowfullscreen></iframe>
+      <div class="video-content">
+        <h3>Olathe Youth Symphony</h3>
+        <p class="small">2023</p>
+        <p>a performance from my time playing with Olathe Youth Symphony.</p>
+        <span class="tag">symphony</span>
+        <span class="tag">violin</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="KANSAS_CITY_YOUTH_SYMPHONY_2023_EMBED_LINK_HERE" allowfullscreen></iframe>
+      <div class="video-content">
+        <h3>Kansas City Youth Symphony</h3>
+        <p class="small">2023</p>
+        <p>a performance from Kansas City Youth Symphony.</p>
+        <span class="tag">orchestra</span>
+        <span class="tag">KCYS</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="UMKC_HONORS_RECITAL_2022_EMBED_LINK_HERE" allowfullscreen></iframe>
+      <div class="video-content">
+        <h3>UMKC Honors Recital</h3>
+        <p class="small">2022</p>
+        <p>a recital performance from the UMKC honors program.</p>
+        <span class="tag">recital</span>
+        <span class="tag">violin</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>what i’m listening to right now</h2>
+  <p>
+    a rotating list of pieces i love, am learning from, or keep coming back to.
+  </p>
+  <div class="listening-grid">
+    <div class="listening-card">
+      <h3>piece title here</h3>
+      <p class="small">composer / performer</p>
+      <p>why i like it, what part i keep replaying, or what it makes me think about.</p>
+      <iframe class="embed" src="SPOTIFY_OR_YOUTUBE_EMBED_LINK_HERE" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="listening-card">
+      <h3>piece title here</h3>
+      <p class="small">composer / performer</p>
+      <p>short note about the piece.</p>
+      <iframe class="embed" src="SPOTIFY_OR_YOUTUBE_EMBED_LINK_HERE" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="listening-card">
+      <h3>piece title here</h3>
+      <p class="small">composer / performer</p>
+      <p>short note about the piece.</p>
+      <iframe class="embed" src="SPOTIFY_OR_YOUTUBE_EMBED_LINK_HERE" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+  </div>
+  <p class="note">
+    note to self: use Spotify, YouTube, or uploaded audio files here. Spotify/YouTube are easiest because they can play directly on the page.
+  </p>
+</section>
+<footer>
+  <a href="me.html">back to me</a>
+</footer>
+  </main>
+</body>
+</html>
