@@ -1,141 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>me — Sarah Anderson</title>
-
-<style>
-<style>
-  .life-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 18px;
-    margin-top: 26px;
-  }
-
-  .life-card {
-    display: block;
-    border: none;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    height: 260px;
-    border-radius: 22px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 8px 24px rgba(60, 35, 20, 0.15);
-  }
-
-  .life-card:hover {
-    transform: translateY(-3px);
-    transition: 0.2s ease;
-    border: none;
-  }
-
-  .life-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.58));
-  }
-
-  .life-label {
-    position: absolute;
-    left: 18px;
-    bottom: 18px;
-    z-index: 2;
-  }
-
-  .life-label h3 {
-    margin: 0;
-    font-size: 26px;
-  }
-
-  .life-label p {
-    margin: 4px 0 0;
-    font-size: 15px;
-  }
-
-  .music-card {
-    background-image: url("IMG_4839.jpeg");
-  }
-
-  .running-card {
-    background-image: url("IMG_0381.jpeg");
-  }
-
-  .travel-card {
-    background-image: url("IMG_0365.jpeg");
-  }
-</style>
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>me — Sarah Anderson</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #faf7f2;
+      color: #1f1f1f;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+    h1 {
+      font-size: 54px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 54px;
+      border-bottom: 1px solid #d8d0c7;
+      padding-bottom: 8px;
+    }
+    h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+    p {
+      font-size: 17px;
+    }
+    a {
+      color: #7a4e3a;
+      text-decoration: none;
+      border-bottom: 1px solid #c9a894;
+    }
+    a:hover {
+      color: #000;
+      border-bottom: 1px solid #000;
+    }
+    .intro {
+      font-size: 22px;
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+    .nav {
+      margin: 24px 0 48px;
+      font-size: 18px;
+    }
+    .nav a {
+      margin-right: 18px;
+    }
+    .about-box {
+      background: #fffaf7;
+      border: 1px solid #dfd0c6;
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
+    }
+    .life-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 26px;
+    }
+    .life-card {
+      display: block;
+      position: relative;
+      height: 430px;
+      border-radius: 22px;
+      overflow: hidden;
+      background-color: #d8d0c7;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 8px 24px rgba(60, 35, 20, 0.16);
+    }
+    .life-card:hover {
+      transform: translateY(-3px);
+      transition: 0.2s ease;
+      border: none;
+    }
+    .life-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.68));
+      z-index: 1;
+    }
+    .life-label {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      z-index: 2;
+    }
+    .life-label h3 {
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    .life-label p {
+      font-size: 15px;
+      margin: 0;
+      line-height: 1.35;
+    }
+    .music-card {
+      background-image: url("IMG_4839.jpeg");
+    }
+    .running-card {
+      background-image: url("IMG_0381.jpeg");
+    }
+    .travel-card {
+      background-image: url("IMG_0365.jpeg");
+    }
+    footer {
+      margin-top: 70px;
+      padding-top: 24px;
+      border-top: 1px solid #d8d0c7;
+      color: #6d665f;
+      font-size: 14px;
+    }
+    @media (max-width: 800px) {
+      .life-grid {
+        grid-template-columns: 1fr;
+      }
+      .life-card {
+        height: 420px;
+      }
+    }
+    @media (max-width: 600px) {
+      .page {
+        padding: 48px 20px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+      .intro {
+        font-size: 20px;
+      }
+      .nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<main class="page">
-<h1>me</h1>
-
+  <main class="page">
+    <h1>me</h1>
 <p class="intro">
-a little more about who i am, what i’m interested in, and what i’m up to.
+  a little more about who i am, what i’m interested in, and what i’m usually up to.
 </p>
-
 <nav class="nav">
-<a href="index.html">home</a>
-<a href="work.html">work</a>
-<a href="notes.html">notes</a>
-<a href="photos.html">photos</a>
-<a href="contact.html">contact</a>
+  <a href="index.html">home</a>
+  <a href="work.html">work</a>
+  <a href="notes.html">thoughts</a>
+  <a href="photos.html">photos</a>
+  <a href="contact.html">contact</a>
 </nav>
-
-
-<p>
-hi! i’m Sarah, an aerospace engineering student minoring in chemistry and music at UC San Diego - go tritons! i'm interested in pretty much everything i've studied so far, 
-but focusing on mechanical systems and electrochemistry. right now, i’m exploring CAD, 3D printing, MATLAB modeling, research, and how ideas
-translate to  physical systems. i like projects that sit somewhere between engineering, math,
-chemistry, and design.
-</p>
-
-<p>
-
-i'm from kansas city (the kansas side) but have been to pretty much every state (48/50!) and love to travel. i run a lot - boasting wins in both the kansas city 
-turkey trot and freedom run. i play violin and piano, take lots of pictures, and usually
-have some project, application, or half-finished idea going.
-</p>
-
-</p>
-
-  <section>
+<section class="about-box">
+  <p>
+    hi! i’m Sarah, an aerospace engineering student minoring in chemistry and music at UC San Diego — go tritons!
+    i’m interested in pretty much everything i’ve studied so far, but currently focusing on mechanical systems
+    and electrochemistry.
+  </p>
+  <p>
+    right now i’m exploring CAD, 3D printing, MATLAB modeling, research, and how ideas translate into physical systems.
+    i like projects that sit somewhere between engineering, math, chemistry, and design.
+  </p>
+  <p>
+    i’m from Kansas City — the Kansas side — but have been to pretty much every state and love to travel.
+    i run a lot, play violin and piano, take lots of pictures, and usually have some project, application,
+    or half-finished idea going.
+  </p>
+</section>
+<section>
   <h2>other pieces of my life</h2>
-
   <div class="life-grid">
     <a class="life-card music-card" href="music.html">
       <div class="life-label">
         <h3>music</h3>
-        <p>violin, piano, orchestra, and my favorite pieces i've played.</p>
+        <p>violin, piano, orchestra, and my favorite pieces i’ve played.</p>
       </div>
     </a>
-
     <a class="life-card running-card" href="running.html">
       <div class="life-label">
         <h3>running</h3>
-        <p>training, racing, routes, and why adidas are the best running shoes.</p>
+        <p>training, racing, routes, and why i talk about running too much.</p>
       </div>
     </a>
-
     <a class="life-card travel-card" href="travel.html">
       <div class="life-label">
         <h3>travel / bucket list</h3>
-        <p>places i’ve been, places i want to go, and my bucket list!</p>
+        <p>places i’ve been, places i want to go, and photos along the way.</p>
       </div>
     </a>
   </div>
 </section>
-
 <footer>
-<a href="index.html">back home</a>
+  <a href="index.html">back home</a>
 </footer>
-</main>
+  </main>
 </body>
 </html>
