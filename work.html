@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>work — Sarah Anderson</title>
+
   <style>
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       padding: 0;
@@ -16,48 +19,59 @@
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.6;
     }
+
     .page {
       max-width: 980px;
       margin: 0 auto;
       padding: 70px 24px;
     }
+
     h1 {
       font-size: 54px;
       margin-bottom: 10px;
     }
+
     h2 {
       font-size: 28px;
       margin-top: 58px;
       border-bottom: 1px solid #d8d0c7;
       padding-bottom: 8px;
     }
+
     h3 {
       font-size: 25px;
       margin: 0 0 6px;
     }
+
     p {
       font-size: 17px;
     }
+
     a {
       color: #7a4e3a;
       text-decoration: none;
       border-bottom: 1px solid #c9a894;
     }
+
     a:hover {
       color: #000;
       border-bottom: 1px solid #000;
     }
+
     .intro {
       font-size: 23px;
       max-width: 760px;
     }
+
     .nav {
       margin: 24px 0 48px;
       font-size: 18px;
     }
+
     .nav a {
       margin-right: 18px;
     }
+
     .project {
       background: #fffaf7;
       border: 1px solid #dfd0c6;
@@ -66,14 +80,17 @@
       margin-top: 28px;
       box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
     }
+
     .project-content {
       padding: 26px;
     }
+
     .small {
       color: #6d665f;
       font-size: 15px;
       margin-top: 0;
     }
+
     .tag {
       display: inline-block;
       font-size: 13px;
@@ -83,12 +100,14 @@
       margin-right: 5px;
       margin-top: 5px;
     }
+
     .button-row {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 20px;
     }
+
     .button {
       display: inline-block;
       border: 1px solid #c9a894;
@@ -99,16 +118,19 @@
       font-size: 15px;
       text-decoration: none;
     }
+
     .button:hover {
       background: #ead8cc;
       color: #000;
     }
+
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 14px;
       margin-top: 22px;
     }
+
     .photo {
       height: 230px;
       background-color: #d8d0c7;
@@ -117,21 +139,42 @@
       border-radius: 16px;
       border: 1px solid #dfd0c6;
     }
+
     .wang1 {
       background-image: url("IMG_7802.jpeg");
     }
+
     .wang2 {
       background-image: url("IMG_8433.jpeg");
     }
+
     .wang3 {
       background-image: url("IMG_7604.jpeg");
     }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 16px;
+      background: #d8d0c7;
+      display: block;
+    }
+
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 24px;
       margin-top: 28px;
     }
+
     .mini-card {
       background: #fffaf7;
       border: 1px solid #dfd0c6;
@@ -139,6 +182,7 @@
       padding: 24px;
       box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
     }
+
     footer {
       margin-top: 70px;
       padding-top: 24px;
@@ -146,127 +190,190 @@
       color: #6d665f;
       font-size: 14px;
     }
+
     @media (max-width: 650px) {
       h1 {
         font-size: 42px;
       }
+
       .intro {
         font-size: 20px;
       }
+
       .photo {
         height: 190px;
       }
     }
   </style>
 </head>
+
 <body>
   <main class="page">
     <h1>work</h1>
-<nav class="nav">
-  <a href="index.html">home</a>
-  <a href="me.html">me</a>
-  <a href="notes.html">thoughts</a>
-  <a href="photos.html">photos</a>
-  <a href="contact.html">talk to me!</a>
-</nav>
-<h2>research</h2>
-<section class="project">
-  <div class="project-content">
-    <h3>wearable sensor research</h3>
-    <p class="small">Joseph Wang Laboratory · wearable sensors · CAD · 3D printing · wet lab · modeling</p>
-    <p>
-      i contribute to wearable sensor research through CAD, 3D-printed fixtures, wet lab work,
-      data analysis, and PK/ODE modeling. i’ve worked around sensor and hydrogel fabrication,
-      testing, and the process of turning research ideas into physical systems that can actually
-      be used and improved.
+
+    <p class="intro">
+      research, projects, prototypes, models, and things i’ve made while learning how engineering works in real life.
     </p>
-    <p>
-      this work has made me especially interested in the overlap between mechanical design,
-      chemistry, biology, and medical devices.
-    </p>
-    <span class="tag">wearable sensors</span>
-    <span class="tag">CAD</span>
-    <span class="tag">3D printing</span>
-    <span class="tag">wet lab</span>
-    <span class="tag">modeling</span>
-    <div class="photo-grid">
-      <div class="photo wang1"></div>
-      <div class="photo wang2"></div>
-      <div class="photo wang3"></div>
+
+    <nav class="nav">
+      <a href="index.html">home</a>
+      <a href="me.html">me</a>
+      <a href="notes.html">thoughts</a>
+      <a href="photos.html">photos</a>
+      <a href="contact.html">talk to me!</a>
+    </nav>
+
+    <h2>research</h2>
+
+    <section class="project">
+      <div class="project-content">
+        <h3>wearable sensor research</h3>
+        <p class="small">Joseph Wang Laboratory · wearable sensors · CAD · 3D printing · wet lab · modeling</p>
+
+        <p>
+          i contribute to wearable sensor research through CAD, 3D-printed fixtures, wet lab work,
+          data analysis, and PK/ODE modeling. i’ve worked around sensor and hydrogel fabrication,
+          testing, and the process of turning research ideas into physical systems that can actually
+          be used and improved.
+        </p>
+
+        <p>
+          this work has made me especially interested in the overlap between mechanical design,
+          chemistry, biology, and medical devices.
+        </p>
+
+        <span class="tag">wearable sensors</span>
+        <span class="tag">CAD</span>
+        <span class="tag">3D printing</span>
+        <span class="tag">wet lab</span>
+        <span class="tag">modeling</span>
+
+        <div class="photo-grid">
+          <div class="photo wang1"></div>
+          <div class="photo wang2"></div>
+          <div class="photo wang3"></div>
+        </div>
+      </div>
+    </section>
+
+    <h2>projects</h2>
+
+    <section class="project">
+      <div class="project-content">
+        <h3>autonomous robot design project</h3>
+        <p class="small">UCSD MAE 3 · Fusion 360 · laser cutting · 3D printing · rapid prototyping</p>
+
+        <p>
+          i designed, manufactured, and validated competition robot components using Fusion 360 CAD,
+          modeling, rapid prototyping, laser cutting, and 3D printing. i worked on drivetrain and
+          component analysis to improve performance and stability.
+        </p>
+
+        <p>
+          our robot placed 4th out of 34 teams in the final class design competition.
+        </p>
+
+        <span class="tag">robotics</span>
+        <span class="tag">Fusion 360</span>
+        <span class="tag">mechanical design</span>
+        <span class="tag">laser cutting</span>
+        <span class="tag">3D printing</span>
+
+        <div class="video-grid">
+          <iframe class="video-frame" src="https://drive.google.com/file/d/1HskP3RiYzFk5ENiV_zxVfzJ-CDYVcSUg/preview" allowfullscreen></iframe>
+
+          <iframe class="video-frame" src="https://drive.google.com/file/d/19dCE4iuJT27ZXQEZjyB8Q6iDRPWts9n6/preview" allowfullscreen></iframe>
+        </div>
+
+        <div class="button-row">
+          <a class="button" href="https://docs.google.com/presentation/d/1Y2Gypub9ueI0Qz7pLiRgEdQqSfd9eq1v/edit?usp=drivesdk&ouid=117273649641868204347&rtpof=true&sd=true" target="_blank">presentation</a>
+
+          <a class="button" href="https://docs.google.com/document/d/1-9C7-oHm0UtkWQN7q2TL7Fj9KEyLRqmnmoPzUVnK4v8/edit?usp=drivesdk" target="_blank">report</a>
+
+          <a class="button" href="https://drive.google.com/file/d/1HskP3RiYzFk5ENiV_zxVfzJ-CDYVcSUg/view?usp=drivesdk" target="_blank">robot video</a>
+
+          <a class="button" href="https://drive.google.com/file/d/19dCE4iuJT27ZXQEZjyB8Q6iDRPWts9n6/view?usp=drivesdk" target="_blank">design video</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-grid">
+      <section class="mini-card">
+        <h3>satellite TLE analysis</h3>
+        <p class="small">orbital data · MATLAB · aerospace</p>
+
+        <p>
+          i analyzed satellite TLE data to compare orbital parameters like inclination, period,
+          altitude, eccentricity, and mission type. this project helped me connect MATLAB,
+          data analysis, and aerospace systems.
+        </p>
+
+        <span class="tag">aerospace</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">orbital mechanics</span>
+        <span class="tag">data analysis</span>
+
+        <div class="button-row">
+          <a class="button" href="https://github.com/SarahAnderson05/Orbital-Data-Analysis" target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <section class="mini-card">
+        <h3>runner gel wrapper concept</h3>
+        <p class="small">product design · running · human factors</p>
+
+        <p>
+          a personal design idea focused on making gel wrappers easier to carry, fold, and dispose of
+          during runs and races. it came from noticing a small running problem and thinking about how
+          design could make it less annoying.
+        </p>
+
+        <span class="tag">product design</span>
+        <span class="tag">running</span>
+        <span class="tag">human factors</span>
+      </section>
     </div>
-  </div>
-</section>
-<h2>projects</h2>
-<div class="project-grid">
-  <section class="mini-card">
-    <h3>autonomous robot design project</h3>
-    <p class="small">UCSD MAE 3 · Fusion 360 · laser cutting · 3D printing · rapid prototyping</p>
-    <p>
-      i designed, manufactured, and validated competition robot components using Fusion 360 CAD,
-      modeling, rapid prototyping, laser cutting, and 3D printing. i worked on drivetrain and
-      component analysis to improve performance and stability.
-    </p>
-    <p>
-      our robot placed 4th out of 34 teams in the final class design competition.
-    </p>
-    <span class="tag">robotics</span>
-    <span class="tag">Fusion 360</span>
-    <span class="tag">mechanical design</span>
-    <span class="tag">laser cutting</span>
-    <span class="tag">3D printing</span>
-    <div class="button-row">
-      <a class="button" href="https://docs.google.com/presentation/d/1Y2Gypub9ueI0Qz7pLiRgEdQqSfd9eq1v/edit?usp=drivesdk&ouid=117273649641868204347&rtpof=true&sd=true" target="_blank">presentation</a>
-      <a class="button" href="https://docs.google.com/document/d/1-9C7-oHm0UtkWQN7q2TL7Fj9KEyLRqmnmoPzUVnK4v8/edit?usp=drivesdk" target="_blank">report</a>
-    </div>
-  </section>
-  <section class="mini-card">
-    <h3>satellite TLE analysis</h3>
-    <p class="small">orbital data · MATLAB · aerospace</p>
-    <p>
-      i analyzed satellite TLE data to compare orbital parameters like inclination, period,
-      altitude, eccentricity, and mission type. this project helped me connect MATLAB,
-      data analysis, and aerospace systems.
-    </p>
-    <span class="tag">aerospace</span>
-    <span class="tag">MATLAB</span>
-    <span class="tag">orbital mechanics</span>
-    <span class="tag">data analysis</span>
-    <div class="button-row">
-      <a class="button" href="https://github.com/SarahAnderson05/Orbital-Data-Analysis" target="_blank">GitHub</a>
-    </div>
-  </section>
-  <section class="mini-card">
-    <h3>runner gel wrapper concept</h3>
-    <p class="small">product design · running · human factors</p>
-    <p>
-      a personal design idea focused on making gel wrappers easier to carry, fold, and dispose of
-      during runs and races. it came from noticing a small running problem and thinking about how
-      design could make it less annoying.
-    </p>
-    <span class="tag">product design</span>
-    <span class="tag">running</span>
-    <span class="tag">human factors</span>
-  </section>
-</div>
-</section>
-<h2>experience</h2>
-<section class="project">
-  <div class="project-content">
-    <h3>sterilization technician</h3>
-    <p class="small">Celebrate Dental and Orthodontics · Kansas City</p>
-    <p>
-      i work in an orthodontic office helping with sterilization, organization, patient flow,
-      and day-to-day clinical support. it has taught me how important reliability, communication,
-      and small process details are in a real workplace.
-    </p>
-    <span class="tag">healthcare</span>
-    <span class="tag">clinical support</span>
-    <span class="tag">organization</span>
-  </div>
-</section>
-<footer>
-  <a href="index.html">back home</a>
-</footer>
+
+    <h2>teaching</h2>
+
+    <section class="project">
+      <div class="project-content">
+        <h3>COSMOS UCSD mechanical design tutor</h3>
+        <p class="small">robotics · mechanical design · student support</p>
+
+        <p>
+          i served as a 2026 summer robotics tutor for high school students at UCSD, helping students
+          work through mechanical design, robot-building, and project-based engineering concepts.
+        </p>
+
+        <span class="tag">teaching</span>
+        <span class="tag">robotics</span>
+        <span class="tag">mechanical design</span>
+      </div>
+    </section>
+
+    <h2>experience</h2>
+
+    <section class="project">
+      <div class="project-content">
+        <h3>sterilization technician</h3>
+        <p class="small">Celebrate Dental and Orthodontics · Kansas City</p>
+
+        <p>
+          i work in an orthodontic office helping with sterilization, organization, patient flow,
+          and day-to-day clinical support. it has taught me how important reliability, communication,
+          and small process details are in a real workplace.
+        </p>
+
+        <span class="tag">healthcare</span>
+        <span class="tag">clinical support</span>
+        <span class="tag">organization</span>
+      </div>
+    </section>
+
+    <footer>
+      <a href="index.html">back home</a>
+    </footer>
   </main>
 </body>
 </html>
