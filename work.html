@@ -66,23 +66,6 @@
       margin-top: 28px;
       box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
     }
-    .project-cover {
-      height: 300px;
-      background-color: #d8d0c7;
-      background-size: cover;
-      background-position: center;
-      border-bottom: 1px solid #dfd0c6;
-    }
-    .robot-cover {
-      background-image:
-        linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.2)),
-        url("robot-cover.jpg");
-    }
-    .satellite-cover {
-      background-image:
-        linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.2)),
-        url("satellite-cover.jpg");
-    }
     .project-content {
       padding: 26px;
     }
@@ -122,22 +105,40 @@
     }
     .photo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 14px;
       margin-top: 22px;
     }
     .photo {
-      height: 180px;
+      height: 230px;
       background-color: #d8d0c7;
       background-size: cover;
       background-position: center;
       border-radius: 16px;
       border: 1px solid #dfd0c6;
     }
-    .wang1 { background-image: url("wang-1.jpg"); }
-    .wang2 { background-image: url("wang-2.jpg"); }
-    .wang3 { background-image: url("wang-3.jpg"); }
-    .wang4 { background-image: url("wang-4.jpg"); }
+    .wang1 {
+      background-image: url("IMG_7802.jpeg");
+    }
+    .wang2 {
+      background-image: url("IMG_8433.jpeg");
+    }
+    .wang3 {
+      background-image: url("IMG_7604.jpeg");
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .mini-card {
+      background: #fffaf7;
+      border: 1px solid #dfd0c6;
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(60, 35, 20, 0.08);
+    }
     footer {
       margin-top: 70px;
       padding-top: 24px;
@@ -152,8 +153,8 @@
       .intro {
         font-size: 20px;
       }
-      .project-cover {
-        height: 220px;
+      .photo {
+        height: 190px;
       }
     }
   </style>
@@ -175,15 +176,16 @@
 <section class="project">
   <div class="project-content">
     <h3>wearable sensor research</h3>
-    <p class="small">Joseph Wang Laboratory · wearable sensors · CAD · 3D printing · PK/ODE modeling</p>
+    <p class="small">Joseph Wang Laboratory · wearable sensors · CAD · 3D printing · wet lab · modeling</p>
     <p>
-      i contribute to wearable sensor research through CAD, 3D-printed fixtures, wet lab work, data analysis,
-      and PK/ODE modeling. i’ve worked around sensor and hydrogel fabrication, testing, and the process of turning
-      research ideas into physical systems that can actually be used and improved.
+      i contribute to wearable sensor research through CAD, 3D-printed fixtures, wet lab work,
+      data analysis, and PK/ODE modeling. i’ve worked around sensor and hydrogel fabrication,
+      testing, and the process of turning research ideas into physical systems that can actually
+      be used and improved.
     </p>
     <p>
-      this work has made me especially interested in the overlap between mechanical design, chemistry,
-      biology, and medical devices.
+      this work has made me especially interested in the overlap between mechanical design,
+      chemistry, biology, and medical devices.
     </p>
     <span class="tag">wearable sensors</span>
     <span class="tag">CAD</span>
@@ -194,20 +196,18 @@
       <div class="photo wang1"></div>
       <div class="photo wang2"></div>
       <div class="photo wang3"></div>
-      <div class="photo wang4"></div>
     </div>
   </div>
 </section>
 <h2>projects</h2>
-<section class="project">
-  <div class="project-cover robot-cover"></div>
-  <div class="project-content">
+<div class="project-grid">
+  <section class="mini-card">
     <h3>autonomous robot design project</h3>
     <p class="small">UCSD MAE 3 · Fusion 360 · laser cutting · 3D printing · rapid prototyping</p>
     <p>
       i designed, manufactured, and validated competition robot components using Fusion 360 CAD,
-      modeling, rapid prototyping, laser cutting, and 3D printing. i worked on drivetrain and component
-      analysis to improve performance and stability.
+      modeling, rapid prototyping, laser cutting, and 3D printing. i worked on drivetrain and
+      component analysis to improve performance and stability.
     </p>
     <p>
       our robot placed 4th out of 34 teams in the final class design competition.
@@ -215,44 +215,53 @@
     <span class="tag">robotics</span>
     <span class="tag">Fusion 360</span>
     <span class="tag">mechanical design</span>
-    <span class="tag">laser cutting</span>
     <span class="tag">3D printing</span>
     <div class="button-row">
-      <a class="button" href="https://acesse.one/robotpresentation2025" target="_blank">presentation</a>
-      <a class="button" href="ROBOT_CAD_LINK_HERE" target="_blank">CAD</a>
-      <a class="button" href="https://l1nk.dev/individualrobotanalysisanderson" target="_blank">analysis / report</a>
+      <a class="button" href="https://docs.google.com/presentation/d/1Y2Gypub9ueI0Qz7pLiRgEdQqSfd9eq1v/edit?usp=drivesdk&ouid=117273649641868204347&rtpof=true&sd=true" target="_blank">presentation</a>
+      <a class="button" href="https://docs.google.com/document/d/1-9C7-oHm0UtkWQN7q2TL7Fj9KEyLRqmnmoPzUVnK4v8/edit?usp=drivesdk" target="_blank">report</a>
     </div>
-  </div>
-</section>
-<section class="project">
-  <div class="project-cover satellite-cover"></div>
-  <div class="project-content">
+  </section>
+  <section class="mini-card">
     <h3>satellite TLE analysis</h3>
     <p class="small">orbital data · MATLAB · aerospace</p>
     <p>
-      i analyzed satellite TLE data to compare orbital parameters like inclination, period, altitude,
-      eccentricity, and mission type. this project helped me connect MATLAB, data analysis, and aerospace systems.
+      i analyzed satellite TLE data to compare orbital parameters like inclination, period,
+      altitude, eccentricity, and mission type. this project helped me connect MATLAB,
+      data analysis, and aerospace systems.
     </p>
     <span class="tag">aerospace</span>
     <span class="tag">MATLAB</span>
     <span class="tag">orbital mechanics</span>
     <span class="tag">data analysis</span>
     <div class="button-row">
-      <a class="button" href="SATELLITE_PRESENTATION_LINK_HERE" target="_blank">presentation</a>
+      <a class="button" href="https://github.com/SarahAnderson05/Orbital-Data-Analysis" target="_blank">GitHub</a>
     </div>
-  </div>
-</section>
-<section class="project">
-  <div class="project-content">
+  </section>
+  <section class="mini-card">
     <h3>runner gel wrapper concept</h3>
     <p class="small">product design · running · human factors</p>
     <p>
-      a personal design idea focused on making gel wrappers easier to carry, fold, and dispose of during runs and races.
-      it came from noticing a small running problem and thinking about how design could make it less annoying.
+      a personal design idea focused on making gel wrappers easier to carry, fold, and dispose of
+      during runs and races. it came from noticing a small running problem and thinking about how
+      design could make it less annoying.
     </p>
     <span class="tag">product design</span>
     <span class="tag">running</span>
     <span class="tag">human factors</span>
+  </section>
+</div>
+<h2>teaching</h2>
+<section class="project">
+  <div class="project-content">
+    <h3>COSMOS UCSD mechanical design tutor</h3>
+    <p class="small">robotics · mechanical design · student support</p>
+    <p>
+      i served as a 2026 summer robotics tutor for high school students at UCSD, helping students
+      work through mechanical design, robot-building, and project-based engineering concepts.
+    </p>
+    <span class="tag">teaching</span>
+    <span class="tag">robotics</span>
+    <span class="tag">mechanical design</span>
   </div>
 </section>
 <h2>experience</h2>
@@ -268,19 +277,6 @@
     <span class="tag">healthcare</span>
     <span class="tag">clinical support</span>
     <span class="tag">organization</span>
-  </div>
-</section>
-<section class="project">
-  <div class="project-content">
-    <h3>other work experience</h3>
-    <p class="small">customer service · communication · responsibility</p>
-    <p>
-      i’ve also worked in retail, food service, and lifeguarding roles, which gave me experience with
-      customer service, teamwork, safety, communication, and staying calm while things are moving quickly.
-    </p>
-    <span class="tag">customer service</span>
-    <span class="tag">teamwork</span>
-    <span class="tag">communication</span>
   </div>
 </section>
 <footer>
