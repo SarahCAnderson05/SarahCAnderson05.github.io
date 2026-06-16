@@ -1,7 +1,5 @@
 # Sarah Anderson Personal Site
 
-A free, minimal personal website starter for GitHub Pages.
-
 ## Files
 
 - `index.html` — homepage
